@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API = axios.create({ baseURL: 'https://task-manager-app-backend-xz3w.onrender.com' });
+export const API = axios.create({ baseURL: 'https://task-manager-app-backend-xz3w.onrender.com/api' });
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem('token');

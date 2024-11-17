@@ -1,7 +1,7 @@
 // src/api/tasks.js
 import axios from 'axios';
 
-const API_URL = 'https://task-manager-app-backend-xz3w.onrender.com';
+const API_URL = 'https://task-manager-app-backend-xz3w.onrender.com/api';
 
 const authAxios = axios.create({
   baseURL: API_URL,
