@@ -27,4 +27,4 @@ export const getTasks = (query = '') => API.get(`/tasks${query}`);
 export const updateTask = (id, task) => API.put(`/tasks/${id}`, task);
 export const deleteTask = (id) => API.delete(`/tasks/${id}`);
 
-export const API_URL = 'https://task-manager-app-backend-xz3w.onrender.com';
+export const API_URL = 'https://task-manager-app-backend-xz3w.onrender.com/api';
