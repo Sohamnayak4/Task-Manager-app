@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API = axios.create({ baseURL: 'http://localhost:5000/api' });
+export const API = axios.create({ baseURL: 'https://task-manager-app-backend-xz3w.onrender.com' });
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem('token');
@@ -27,4 +27,4 @@ export const getTasks = (query = '') => API.get(`/tasks${query}`);
 export const updateTask = (id, task) => API.put(`/tasks/${id}`, task);
 export const deleteTask = (id) => API.delete(`/tasks/${id}`);
 
-export const API_URL = 'http://localhost:5000/api';
+export const API_URL = 'https://task-manager-app-backend-xz3w.onrender.com';
